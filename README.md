@@ -1,3 +1,3 @@
 le re land ke Mera code 
 
-or ho reame dekhra hai uski bhi "MKC"
+or jo reame dekhra hai uski bhi "MKC"
