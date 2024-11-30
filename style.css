@@ -1,1 +1,160 @@
+/* General Reset */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+  background: linear-gradient(120deg, #000428, #004e92);
+  color: white;
+}
 
+/* Hacker Screen */
+.hacker-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: black;
+  animation: glow-bg 3s infinite alternate;
+}
+
+.hacker-text h1 {
+  font-size: 2.5rem;
+  color: #00ff00;
+  text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00;
+  animation: hacker-glow 1.5s infinite alternate;
+}
+
+.center-title {
+  font-size: 3rem;
+  color: #ff3b3b;
+  text-shadow: 0 0 15px #ff3b3b, 0 0 30px #ff3b3b;
+  animation: name-flicker 1s infinite alternate;
+}
+
+.footer-glow {
+  margin-top: 2rem;
+  color: #4caf50;
+  font-size: 1rem;
+  animation: fade-in-out 2s infinite alternate;
+}
+
+/* Main Content */
+.hidden {
+  display: none;
+}
+
+.header {
+  text-align: center;
+  padding: 30px 0;
+  background: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+}
+
+.main-title {
+  font-size: 3rem;
+  background: linear-gradient(45deg, #00d2ff, #3a7bd5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: text-zoom 2s infinite alternate;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #ffeb3b;
+}
+
+.highlight {
+  margin: 40px auto;
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.funky-text {
+  font-size: 1.8rem;
+  color: #ff4081;
+  text-shadow: 0 0 15px #ff4081, 0 0 30px #ff4081;
+  animation: text-pulse 2s infinite alternate;
+}
+
+.cta-btn {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(45deg, #00ff87, #60efff);
+  color: black;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cta-btn:hover {
+  background: linear-gradient(45deg, #60efff, #00ff87);
+  transform: scale(1.1);
+}
+
+/* Footer */
+.footer {
+  padding: 15px 0;
+  background: black;
+  font-size: 0.9rem;
+  color: white;
+}
+
+/* Animations */
+@keyframes hacker-glow {
+  0% {
+    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00;
+  }
+  100% {
+    text-shadow: 0 0 20px #00ff00, 0 0 40px #00ff00;
+  }
+}
+
+@keyframes name-flicker {
+  0% {
+    text-shadow: 0 0 10px #ff3b3b, 0 0 20px #ff3b3b;
+  }
+  100% {
+    text-shadow: 0 0 30px #ff3b3b, 0 0 50px #ff3b3b;
+  }
+}
+
+@keyframes glow-bg {
+  0% {
+    background: linear-gradient(120deg, #000428, #004e92);
+  }
+  100% {
+    background: linear-gradient(120deg, #004e92, #000428);
+  }
+}
+
+@keyframes fade-in-out {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes text-zoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes text-pulse {
+  0% {
+    text-shadow: 0 0 15px #ff4081, 0 0 30px #ff4081;
+  }
+  100% {
+    text-shadow: 0 0 30px #ff4081, 0 0 60px #ff4081;
+  }
+    }
